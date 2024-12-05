@@ -1,10 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
 // Cria uma instância do axios com uma configuração personalizada
 const api = axios.create({
-  baseURL: 'https://confirma-back-production.up.railway.app/api', // URL base para todas as requisições
+  baseURL: "https://confirma-back-production.up.railway.app", // URL base para todas as requisições
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 

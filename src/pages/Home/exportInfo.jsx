@@ -1,11 +1,13 @@
 import React from 'react';
+import Report from "../../components/report/report";
 
-const Home = () => {
+const ExportInfo = () => {
   return (
     <div>
-      <h1>Bem-vindo à Página Inicial</h1>
+      <h1>Relatório de Dados</h1>
+      <Report />
     </div>
   );
 };
 
-export default Home;
+export default ExportInfo;

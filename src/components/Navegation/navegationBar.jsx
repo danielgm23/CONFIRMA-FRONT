@@ -18,6 +18,7 @@ export default function App() {
   const menuItems = [
     "Lista de presentes",
     
+    
   ];
 
   return (
@@ -55,7 +56,7 @@ export default function App() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/relatorio">
+          <Link color="foreground" href="/login">
             Receber relatório
           </Link>
         </NavbarItem>

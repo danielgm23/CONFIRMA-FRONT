@@ -7,13 +7,14 @@ const PhoneInput = ({ value, onChange }) => {
     <Container>
       <label htmlFor="phone">TELEFONE:</label>
       <InputMask
-        mask="(99)99999-9999"
+        mask="(99) 99999-9999"
         value={value}
         onChange={onChange}
         placeholder="(XX) XXXXX-XXXX"
         required
+        maskChar={null} // Adicionando esta propriedade
       >
-        {() => <input type="tel" id="phone" name="phone" />}
+        {(inputProps) => <input {...inputProps} type="tel" id="phone" name="phone" />}
       </InputMask>
     </Container>
   );

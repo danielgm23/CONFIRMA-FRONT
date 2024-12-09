@@ -52,6 +52,15 @@ export default function App() {
         </NavbarItem>
        
       </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="/relatorio">
+            Receber relatório
+          </Link>
+        </NavbarItem>
+       
+      </NavbarContent>
       
       <NavbarMenu>
         {menuItems.map((item, index) => (

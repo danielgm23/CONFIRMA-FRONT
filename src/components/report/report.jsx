@@ -31,7 +31,7 @@ const Report = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await api.get('/form/data');
+        const response = await api.get('/data');
         setData(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);

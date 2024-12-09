@@ -43,7 +43,7 @@ const Form = () => {
     const formData = { name, phone, adultNames };
 
     try {
-      const response = await api.post('/form/submit', formData);
+      const response = await api.post('/submit', formData);
       console.log('Dados enviados com sucesso:', response.data);
       setName('');
       setPhone('');

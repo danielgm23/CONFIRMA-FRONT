@@ -67,7 +67,7 @@ const Form = () => {
         <PhoneInput 
           value={phone} 
           onChange={(e) => setPhone(e.target.value)} 
-          placeholder="Digite aqui seu telefone" 
+           
         />
         <AdultSection 
           value={adultNames} 

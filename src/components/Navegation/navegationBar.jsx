@@ -10,16 +10,12 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
-import conviteImg from "../../assets/Convite virtual casamento save the date dourado (1748 x 1240 px) (3).png";
+import conviteImg from "../../assets/adnew.png";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Lista de presentes",
-    
-    
-  ];
+  const menuItems = [ ];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -33,11 +29,10 @@ export default function App() {
             src={conviteImg}
             alt="Names"
             style={{
-              width: "20%",
+              width: "10%",
               height: "auto",
               borderRadius: "10px",
-              padding: "5px"
-         
+              padding: "5px",
             }}
           />
 
@@ -45,14 +40,7 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Lista de presentes
-          </Link>
-        </NavbarItem>
-       
-      </NavbarContent>
+     
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
@@ -60,18 +48,12 @@ export default function App() {
             Receber relatório
           </Link>
         </NavbarItem>
-       
       </NavbarContent>
-      
+
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-             
-              className="w-full"
-              href="#"
-              size="lg"
-            >
+            <Link className="w-full" href="#" size="lg">
               {item}
             </Link>
           </NavbarMenuItem>

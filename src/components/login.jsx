@@ -51,8 +51,8 @@ const Login = () => {
   const handleLogin = (event) => {
     event.preventDefault();
     // Usuário e senha fixos
-    const fixedUsername = 'danielgm';
-    const fixedPassword = 'dgm23092002';
+    const fixedUsername = 'Administrador';
+    const fixedPassword = '14032025';
 
     if (username === fixedUsername && password === fixedPassword) {
       navigate('/relatorio'); // Redireciona para a página do relatório

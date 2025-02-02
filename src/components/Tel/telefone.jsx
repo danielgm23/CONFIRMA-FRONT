@@ -12,7 +12,7 @@ const PhoneInput = ({ value, onChange }) => {
         onChange={onChange}
         placeholder="(XX) XXXXX-XXXX"
         required
-        maskChar={null} // Adicionando esta propriedade
+        maskChar={null} 
       >
         {(inputProps) => <input {...inputProps} type="tel" id="phone" name="phone" />}
       </InputMask>

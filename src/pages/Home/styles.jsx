@@ -12,12 +12,12 @@ export const Container = styled.div`
 
   > img {
     margin-top: -110px; /* Margem negativa para telas maiores */
-    width: 800px;
-    height: 800px;
+    width: 500px;
+    height: 600px;
 
     @media (max-width: 768px) {
       margin-top: -80px; /* Ajusta a margem para telas menores */
-      width: 600px;
+      width: 400px;
       height: auto;
     }
 

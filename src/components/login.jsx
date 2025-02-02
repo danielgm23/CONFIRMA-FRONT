@@ -8,6 +8,8 @@ const PageContainer = styled.div`
   align-items: center;
   height: 100vh; /* Ocupa toda a altura da tela */
   background-color: #f8f8f8; /* Cor de fundo opcional */
+
+  padding: 20px;
 `;
 
 const Container = styled.div`

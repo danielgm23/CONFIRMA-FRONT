@@ -15,7 +15,7 @@ import conviteImg from "../../assets/adnew.png";
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [ ];
+  const menuItems = [{ label: "Receber relatório", href: "/login" }];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -40,8 +40,6 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
 
-     
-
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/login">
@@ -52,9 +50,9 @@ export default function App() {
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href="#" size="lg">
-              {item}
+          <NavbarMenuItem key={index}>
+            <Link className="w-full" href={item.href} size="lg">
+              {item.label}
             </Link>
           </NavbarMenuItem>
         ))}
